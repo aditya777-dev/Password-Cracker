@@ -153,7 +153,7 @@ def main():
         else:
             wordlist = None
 
-        mode = input("Enter mode (single/multi): ").lower()
+        mode = input("Enter mode (single/multi): ").lower() # Refers to single core or multi core usage
 
         if mode == "multi":
             start_brute_force_multiprocess(hashed_password, algorithm, charset, length_min, length_max, wordlist)
