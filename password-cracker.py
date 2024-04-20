@@ -147,7 +147,7 @@ def main():
         wordlist_option = input("Do you want to use a wordlist file? (yes/no): ").lower()
         if wordlist_option == 'yes':
             wordlist = input("Enter the path to the wordlist file: ")
-            optimize = input("Do you want to optimize wordlist? This will overrite you existing wordlist file. (yes/no): ")
+            optimize = input("Do you want to optimize wordlist? This will overrite your existing wordlist file. (yes/no): ")
             if optimize == 'yes':
                 optimize_wordlist(wordlist)  # Optimize wordlist
         else:
