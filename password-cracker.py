@@ -9,8 +9,10 @@ import threading
 HASH_ALGORITHMS = {
     'md5': hashlib.md5,
     'sha1': hashlib.sha1,
+    'sha224': hashlib.sha224,
     'sha256': hashlib.sha256,
-    'sha512': hashlib.sha512  # Added SHA-512
+    'sha384': hashlib.sha384,
+    'sha512': hashlib.sha512
 }
 
 # Function to hash a string using a given algorithm
@@ -132,7 +134,7 @@ def optimize_wordlist(wordlist):
 # Main function
 def main():
     try:
-        algorithm = input("Enter the hashing algorithm (md5, sha1, sha256, or sha512): ").lower()
+        algorithm = input("Enter the hashing algorithm (md5, sha1, sha224, sha256, sha384, or sha512): ").lower()
         if algorithm not in HASH_ALGORITHMS:
             print("Invalid algorithm!")
             return
